@@ -6,6 +6,7 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
+    <link href="Kullanici.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <style type="text/css">
@@ -48,7 +49,7 @@
                 <tr>
                     <td class="auto-style2"><a href="WebForm5.aspx"><span class="auto-style3">ANASAYFA</span></a> </td>
                     <td class="auto-style2"><a href="GununYemegi.aspx"><span class="auto-style3">GÜNÜN YEMEĞİ</span></a></td>
-                    <td class="auto-style2"><a href="WebForm9.aspx"><span class="auto-style3">TARİF ÖNER</span></a></td>
+                    <td class="auto-style2"><a href="TarifOner.aspx"><span class="auto-style3">TARİF ÖNER</span></a></td>
                     <td class="auto-style2"><a href="hakkımızda.aspx"><span class="auto-style3">HAKKIMIZDA</span></a></td>
                     <td class="auto-style2"><a href="WebForm10.aspx" class="auto-style4"><span class="auto-style3">İLETİŞİM</span></a></td>
                 </tr>

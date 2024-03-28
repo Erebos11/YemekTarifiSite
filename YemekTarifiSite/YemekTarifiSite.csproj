@@ -91,6 +91,7 @@
     <Content Include="Global.asax" />
     <Content Include="GununYemegi.aspx" />
     <Content Include="hakkımızda.aspx" />
+    <Content Include="Kullanici.css" />
     <Content Include="resimler\sarma.jpg" />
     <Content Include="TarifOner.aspx" />
     <Content Include="Web.config" />
