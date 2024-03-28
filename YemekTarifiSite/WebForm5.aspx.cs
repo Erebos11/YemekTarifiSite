@@ -16,7 +16,7 @@ namespace YemekTarifiSite
             SqlCommand sqlCommand = new SqlCommand("SELECT * FROM Tbl_Yemekler", Sqlsinif.baglanti());
             SqlDataReader reader = sqlCommand.ExecuteReader();
             DataList2.DataSource = reader;
-            DataList2.DataBind();
+            DataList2.DataBind();   
         }
     }
 }

@@ -12,8 +12,10 @@
             <table class="auto-style6">
                 <tr>
                     <td class="auto-style2" style="background-color: #FFFFFF"><strong style="background-color: #FFFFFF">
-                        <asp:Label ID="Label3" runat="server" CssClass="auto-style5" Text='<%# Eval("YemekAdi") %>'></asp:Label>
-                        </strong></td>
+                        <a href="YemekDetay.aspx">
+                            <asp:Label ID="Label3" runat="server" CssClass="auto-style5" Text='<%# Eval("YemekAdi") %>'></asp:Label>
+                            </strong></td>
+                         </a>
                 </tr>
                 <tr>
                     <td>Malzemeler :&nbsp;

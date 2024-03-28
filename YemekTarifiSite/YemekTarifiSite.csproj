@@ -103,6 +103,7 @@
     <Content Include="WebForm5.aspx" />
     <Content Include="WebForm7.aspx" />
     <Content Include="WebForm9.aspx" />
+    <Content Include="YemekDetay.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -196,6 +197,13 @@
     </Compile>
     <Compile Include="WebForm9.aspx.designer.cs">
       <DependentUpon>WebForm9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YemekDetay.aspx.cs">
+      <DependentUpon>YemekDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YemekDetay.aspx.designer.cs">
+      <DependentUpon>YemekDetay.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
