@@ -51,7 +51,7 @@
     <tr>
         <td>&nbsp;</td>
         <td>
-            <asp:Button ID="BtnGönder" runat="server" Text="Tarif Öner" Width="221px" CssClass="fb8" />
+            <asp:Button ID="BtnGönder" runat="server" Text="Tarif Öner" Width="221px" CssClass="fb8" OnClick="BtnGönder_Click" />
         </td>
     </tr>
 </table>
