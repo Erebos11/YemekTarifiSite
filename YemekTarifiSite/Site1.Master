@@ -51,7 +51,7 @@
                     <td class="auto-style2"><a href="GununYemegi.aspx"><span class="auto-style3">GÜNÜN YEMEĞİ</span></a></td>
                     <td class="auto-style2"><a href="TarifOner.aspx"><span class="auto-style3">TARİF ÖNER</span></a></td>
                     <td class="auto-style2"><a href="hakkımızda.aspx"><span class="auto-style3">HAKKIMIZDA</span></a></td>
-                    <td class="auto-style2"><a href="WebForm10.aspx" class="auto-style4"><span class="auto-style3">İLETİŞİM</span></a></td>
+                    <td class="auto-style2"><a href="iletisim.aspx" class="auto-style4"><span class="auto-style3">İLETİŞİM</span></a></td>
                 </tr>
             </table>
         </div>
