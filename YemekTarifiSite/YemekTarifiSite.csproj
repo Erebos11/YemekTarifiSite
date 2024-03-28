@@ -92,6 +92,7 @@
     <Content Include="GununYemegi.aspx" />
     <Content Include="hakkımızda.aspx" />
     <Content Include="resimler\sarma.jpg" />
+    <Content Include="TarifOner.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="WebForm10.aspx" />
@@ -132,6 +133,13 @@
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
     <Compile Include="Sqlsinif.cs" />
+    <Compile Include="TarifOner.aspx.cs">
+      <DependentUpon>TarifOner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TarifOner.aspx.designer.cs">
+      <DependentUpon>TarifOner.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

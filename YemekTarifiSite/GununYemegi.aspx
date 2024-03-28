@@ -6,7 +6,7 @@
         <ItemTemplate>
             <table class="auto-style6">
                 <tr>
-                    <td><strong>
+                    <td class="auto-style2"><strong>
                         <asp:Label ID="Label12" runat="server" CssClass="auto-style5" Text='<%# Eval("GununYemegiAd") %>'></asp:Label>
                         </strong></td>
                 </tr>
@@ -26,7 +26,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Puan :
+                    <td><em>Puan</em> :
                         <asp:Label ID="Label15" runat="server" Text='<%# Eval("GununYemegiPuan") %>'></asp:Label>
                         &nbsp;&nbsp;&nbsp; Tarih -
                         <asp:Label ID="Label16" runat="server" Text='<%# Eval("GununYemegiTarih") %>'></asp:Label>
