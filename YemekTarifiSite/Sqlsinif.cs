@@ -13,7 +13,7 @@ namespace YemekTarifiSite
          {
             SqlConnection baglan = new SqlConnection(@"Data Source=DESKTOP-6CBVI98\\SQLEXPRESS;Initial Catalog=Dbo_yemektarif;Integrated Security=True");
             baglan.Open();
-            return baglan;
+            return baglan; 
          }
        
     }
