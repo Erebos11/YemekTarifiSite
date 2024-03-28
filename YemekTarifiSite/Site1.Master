@@ -25,6 +25,16 @@
         .auto-style4 {
             text-decoration: none;
         }
+        .auto-style5 {
+            font-size: large;
+        }
+        .auto-style6 {
+            width: 100%;
+        }
+        .auto-style7 {
+            text-align: center;
+            margin-left: 80px;
+        }
     </style>
 </head>
 <body>
@@ -37,7 +47,7 @@
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style2"><a href="WebForm5.aspx"><span class="auto-style3">ANASAYFA</span></a> </td>
-                    <td class="auto-style2"><a href="WebForm8.aspx"><span class="auto-style3">GÜNÜN YEMEĞİ</span></a></td>
+                    <td class="auto-style2"><a href="GununYemegi.aspx"><span class="auto-style3">GÜNÜN YEMEĞİ</span></a></td>
                     <td class="auto-style2"><a href="WebForm9.aspx"><span class="auto-style3">TARİF ÖNER</span></a></td>
                     <td class="auto-style2"><a href="hakkımızda.aspx"><span class="auto-style3">HAKKIMIZDA</span></a></td>
                     <td class="auto-style2"><a href="WebForm10.aspx" class="auto-style4"><span class="auto-style3">İLETİŞİM</span></a></td>
@@ -47,10 +57,20 @@
         <div style="margin-left: 300px; width: 700px; height: 20px;"></div>
         <div style="margin-left: 300px; width: 700px; height: 300px;">
 
-            <div style="width: 200px; float:left; height:100px; background-color:aqua; margin-left:0px; "></div>
-            <div style="width: 450px; float:left; height:300px; background-color:aqua; margin-left:50px; ">
+            <div style="width: 200px; float:left; height: auto; background-color:aqua; margin-left:0px; ">
+                <span class="auto-style5"><strong>Kategoriler</strong></span><strong><br class="auto-style5" />
+                <br class="auto-style5" />
+                </strong>
+                <asp:DataList ID="DataList1" runat="server" OnSelectedIndexChanged="DataList1_SelectedIndexChanged">
+                    <ItemTemplate>
+                        <asp:Label ID="Label1" runat="server" Text='<%# Eval("kategoriAd") %>'></asp:Label>
+                        <asp:Label ID="Label2" runat="server" Text='<%# Eval("kategoriAdet") %>'></asp:Label>
+                    </ItemTemplate>
+                </asp:DataList>
+            </div>
+            <div style="width: 450px; float:left; height:auto; background-color:aqua; margin-left:50px; ">
                     
-                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
                     </asp:ContentPlaceHolder>
             </div>
         </div>
