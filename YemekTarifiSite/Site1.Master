@@ -4,7 +4,7 @@
 
 <html>
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -13,12 +13,15 @@
             width: 100%;
             background-color: #336699;
         }
+
         .auto-style2 {
             text-align: center;
         }
+
         .auto-style3 {
             color: #FFFFFF;
         }
+
         .auto-style4 {
             text-decoration: none;
         }
@@ -27,30 +30,42 @@
 <body>
     <form id="form1" runat="server">
         <div style="height: 150px; width: 700px; margin-left: 300px; text-align: left; background-color: #336699;">
-         
         </div>
-            <div style="margin-left:300px; width:700px; height:20px;" ></div>
-            <div style="margin-left:300px; width:700px; height:25px; background-color: #0099CC;" >
+        <div style="margin-left: 300px; width: 700px; height: 20px;"></div>
+        <div style="margin-left: 300px; width: 700px; height: 25px; background-color: #0099CC;">
 
-                <table class="auto-style1">
-                    <tr>
-                        <td class="auto-style2"><a href="WebForm5.aspx"> <span class="auto-style3">ANASAYFA</span></a> </td>
-                        <td class="auto-style2"><a href="WebForm8.aspx"> <span class="auto-style3">GÜNÜN YEMEĞİ</span></a></td>
-                        <td class="auto-style2"><a href="WebForm9.aspx"> <span class="auto-style3">TARİF ÖNER</span></a></td>
-                        <td class="auto-style2"><a href="hakkımızda.aspx"> <span class="auto-style3">HAKKIMIZDA</span></a></td>
-                        <td class="auto-style2"><a href="WebForm10.aspx" class="auto-style4"> <span class="auto-style3">İLETİŞİM</span></a></td>
-                    </tr>
-                </table>
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style2"><a href="WebForm5.aspx"><span class="auto-style3">ANASAYFA</span></a> </td>
+                    <td class="auto-style2"><a href="WebForm8.aspx"><span class="auto-style3">GÜNÜN YEMEĞİ</span></a></td>
+                    <td class="auto-style2"><a href="WebForm9.aspx"><span class="auto-style3">TARİF ÖNER</span></a></td>
+                    <td class="auto-style2"><a href="hakkımızda.aspx"><span class="auto-style3">HAKKIMIZDA</span></a></td>
+                    <td class="auto-style2"><a href="WebForm10.aspx" class="auto-style4"><span class="auto-style3">İLETİŞİM</span></a></td>
+                </tr>
+            </table>
         </div>
-            <div style="margin-left:300px; width:700px; height:20px;" ></div>
-            <div style="margin-left:300px; width:200px; height:200px; background-color: #336699;">
-                <div style="margin-left:250px; width:450px; height:350px; background-color: #336699;" > 
+        <div style="margin-left: 300px; width: 700px; height: 20px;"></div>
+        <div style="margin-left: 300px; width: 700px; height: 300px;">
 
-                       <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
-                       </asp:ContentPlaceHolder>
-                 </div>   
-           </div>
+            <div style="width: 200px; float:left; height:100px; background-color:aqua; margin-left:0px; "></div>
+            <div style="width: 450px; float:left; height:300px; background-color:aqua; margin-left:50px; ">
+                    
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+
+
+
+
+
     </form>
 </body>
 </html>
-   
+
+
+
+
+
+
