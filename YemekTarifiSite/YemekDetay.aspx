@@ -10,6 +10,13 @@
         .auto-style10 {
             height: 26px;
         }
+        .auto-style11 {
+            background-color: #FFFFFF;
+        }
+        .auto-style12 {
+            height: 29px;
+            text-align: center;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
@@ -22,7 +29,9 @@
             <table class="auto-style6">
                 <tr>
                     <td>
+                        <strong>
                         <asp:Label ID="Label4" runat="server" CssClass="auto-style5" Text='<%# Eval("YorumAdSoyad") %>'></asp:Label>
+                        </strong>
                     </td>
                 </tr>
                 <tr>
@@ -37,4 +46,33 @@
             </table>
         </ItemTemplate>
     </asp:DataList>
+    <div class="auto-style11">YORUM YAPMA PANELİ</div>
+    <asp:Panel ID="Panel1" runat="server">
+        <table class="auto-style6">
+            <tr>
+                <td class="auto-style2"><strong>Ad Soyad</strong>:</td>
+                <td class="auto-style2">
+                    <asp:TextBox ID="TextBox1" runat="server" CssClass="tb5" Width="215px"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2"><strong>Mail:</strong></td>
+                <td class="auto-style2">
+                    <asp:TextBox ID="TextBox2" runat="server" CssClass="tb5" Width="216px"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style12"><strong>Yorumunuz</strong>:</td>
+                <td class="auto-style12">
+                    <asp:TextBox ID="TextBox3" runat="server" CssClass="tb5" Height="89px" TextMode="MultiLine"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style12">&nbsp;</td>
+                <td class="auto-style12">
+                    <asp:Button ID="Button1" runat="server" CssClass="fb8" OnClick="Button1_Click" Text="Yorum Yap" Width="224px" />
+                </td>
+            </tr>
+        </table>
+    </asp:Panel>
 </asp:Content>
