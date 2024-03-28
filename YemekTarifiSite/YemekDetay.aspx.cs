@@ -27,14 +27,12 @@ namespace YemekTarifiSite
             }
             sqlbaglantisi.baglanti().Close();
 
-
-            //    // Yorumlar
-            //    SqlCommand cmd2 = new SqlCommand("SELECT * FROM Yorumlar WHERE yemekid = @p2", sqlbaglantisi.baglanti());
-            //    cmd2.Parameters.AddWithValue("@p2", yemekid);
-            //    SqlDataReader reader2 = cmd2.ExecuteReader();
-            //    DataList2.DataSource = reader2;
-            //    DataList2.DataBind();
-            //}
+            // Yorumlar
+            SqlCommand cmd2 = new SqlCommand("SELECT * FROM Tbl_Yorumlar WHERE yemekid = @p2", sqlbaglantisi.baglanti());
+            cmd2.Parameters.AddWithValue("@p2", yemekid);
+            SqlDataReader reader2 = cmd2.ExecuteReader();
+            DataList2.DataSource = reader2;
+            DataList2.DataBind();
         }
     }
 }
