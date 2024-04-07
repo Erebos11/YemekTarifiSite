@@ -16,10 +16,14 @@
             border: 1px solid #000000;
             border-radius: 10px;
         }
+    .auto-style13 {
+        height: 145px;
+        width: 381px;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-    <table class="auto-style6">
+    <table class="auto-style13">
         <tr>
             <td class="auto-style9" colspan="2"><strong><span class="auto-style10">MESAJ PANELİ</span></strong></td>
         </tr>

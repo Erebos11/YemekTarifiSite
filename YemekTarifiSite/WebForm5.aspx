@@ -7,7 +7,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-    <asp:DataList ID="DataList2" runat="server" Width="442px">
+    <asp:DataList ID="DataList2" runat="server" Width="16px">
         <ItemTemplate>
             <table class="auto-style6">
                 <tr>

@@ -88,11 +88,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin.aspx" />
     <Content Include="Global.asax" />
     <Content Include="GununYemegi.aspx" />
     <Content Include="hakkımızda.aspx" />
+    <Content Include="ikonlar\DELETE.png" />
+    <Content Include="ikonlar\update.jpg" />
     <Content Include="iletisim.aspx" />
+    <Content Include="KategoriDuzenle.aspx" />
+    <Content Include="kategoriDetay.aspx" />
+    <Content Include="kategoriler.aspx" />
     <Content Include="Kullanici.css" />
+    <Content Include="resimler\1.jpg" />
+    <Content Include="resimler\2.jpg" />
+    <Content Include="resimler\images.jpg" />
+    <Content Include="resimler\indir.png" />
     <Content Include="resimler\sarma.jpg" />
     <Content Include="TarifOner.aspx" />
     <Content Include="Web.config" />
@@ -102,11 +112,27 @@
     <Content Include="WebForm3.aspx" />
     <Content Include="WebForm4.aspx" />
     <Content Include="WebForm5.aspx" />
+    <Content Include="WebForm6.aspx" />
     <Content Include="WebForm7.aspx" />
     <Content Include="WebForm9.aspx" />
     <Content Include="YemekDetay.aspx" />
+    <Content Include="Yemekler.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="FileName.cs" />
@@ -133,6 +159,27 @@
     </Compile>
     <Compile Include="iletisim.aspx.designer.cs">
       <DependentUpon>iletisim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KategoriDuzenle.aspx.cs">
+      <DependentUpon>KategoriDuzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KategoriDuzenle.aspx.designer.cs">
+      <DependentUpon>KategoriDuzenle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kategoriDetay.aspx.cs">
+      <DependentUpon>kategoriDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kategoriDetay.aspx.designer.cs">
+      <DependentUpon>kategoriDetay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kategoriler.aspx.cs">
+      <DependentUpon>kategoriler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kategoriler.aspx.designer.cs">
+      <DependentUpon>kategoriler.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.Master.cs">
@@ -192,6 +239,13 @@
     <Compile Include="WebForm5.aspx.designer.cs">
       <DependentUpon>WebForm5.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebForm6.aspx.cs">
+      <DependentUpon>WebForm6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm6.aspx.designer.cs">
+      <DependentUpon>WebForm6.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm7.aspx.cs">
       <DependentUpon>WebForm7.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -213,9 +267,17 @@
     <Compile Include="YemekDetay.aspx.designer.cs">
       <DependentUpon>YemekDetay.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Yemekler.aspx.cs">
+      <DependentUpon>Yemekler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yemekler.aspx.designer.cs">
+      <DependentUpon>Yemekler.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <Content Include="Admin.Master" />
     <None Include="packages.config" />
     <Content Include="Site1.Master" />
     <None Include="Web.Debug.config">

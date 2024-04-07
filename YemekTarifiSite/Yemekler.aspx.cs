@@ -8,14 +8,14 @@ using System.Data.SqlClient;
 
 namespace YemekTarifiSite
 {
-    public partial class hakkımızda : System.Web.UI.Page
-    {   Sqlsinif bgl=new Sqlsinif();
+    public partial class Yemekler : System.Web.UI.Page
+    {   Sqlsinif bgl = new Sqlsinif();
         protected void Page_Load(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("Select * from Tbl_Hakkimizda", bgl.baglanti());
+            SqlCommand komut = new SqlCommand("select * from Tbl_Yemekler",bgl.baglanti());
             SqlDataReader dr = komut.ExecuteReader();
-            DataList2.DataSource = dr;
-            DataList2.DataBind();
+            DataList1.DataSource = dr;
+            DataList1.DataBind();
         }
     }
 }

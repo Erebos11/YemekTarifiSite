@@ -30,20 +30,22 @@
             font-size: large;
         }
         .auto-style6 {
-            width: 100%;
+            height: 145px;
+            width: 699px;
         }
         .auto-style7 {
-            text-align: center;
-            margin-left: 80px;
+            width: 236px;
+            height: 162px;
         }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div style="height: 150px; width: 700px; margin-left: 300px; text-align: left; background-color: #336699;">
+        <div style="margin-left: 300px; text-align: left; background-color: #336699;" class="auto-style6">
+            <asp:Image ID="Image1" runat="server" Height="147px" ImageUrl="~/resimler/1.jpg" Width="700px" />
         </div>
         <div style="margin-left: 300px; width: 700px; height: 20px;"></div>
-        <div style="margin-left: 300px; width: 700px; height: 25px; background-color: #0099CC;">
+        <div style="margin-left: 300px; width: 700px; height: auto; background-color: #0099CC;">
 
             <table class="auto-style1">
                 <tr>
@@ -56,20 +58,21 @@
             </table>
         </div>
         <div style="margin-left: 300px; width: 700px; height: 20px;"></div>
-        <div style="margin-left: 300px; width: 700px; height: 300px;">
+        <div style="margin-left: 300px; width: 700px; height: auto;">
 
-            <div style="width: 200px; float:left; height: auto; background-color:aqua; margin-left:0px; ">
+            <div style="width: 200px; float:left; height: auto; background-color:aqua;  ">
                 <span class="auto-style5"><strong>Kategoriler</strong></span><strong><br class="auto-style5" />
                 <br class="auto-style5" />
                 </strong>
-                <asp:DataList ID="DataList1" runat="server" OnSelectedIndexChanged="DataList1_SelectedIndexChanged">
+                <asp:DataList  ID="DataList1" runat="server" Width= "196px" OnSelectedIndexChanged="DataList1_SelectedIndexChanged">
                     <ItemTemplate>
-                        <asp:Label ID="Label1" runat="server" Text='<%# Eval("kategoriAd") %>'></asp:Label>
+                        <a href="kategoriDetay.aspx?Kategoriid=<%# Eval("Kategoriid") %>" >
+                        <asp:Label ID="Label1" runat="server" Text='<%# Eval("kategoriAd") %>'></asp:Label> </a>
                         <asp:Label ID="Label2" runat="server" Text='<%# Eval("kategoriAdet") %>'></asp:Label>
                     </ItemTemplate>
                 </asp:DataList>
             </div>
-            <div style="width: 450px; float:left; height:auto; background-color:aqua; margin-left:50px; ">
+            <div style="width: 400px; height:auto; background-color:aqua; margin-left:300px; ">
                     
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
                     </asp:ContentPlaceHolder>
