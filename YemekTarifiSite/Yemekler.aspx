@@ -26,6 +26,15 @@
         .auto-style16 {
             width: 36px;
         }
+        .auto-style18 {
+            margin-left: 80px;
+        }
+        .auto-style19 {
+            margin-left: 120px;
+        }
+        .auto-style20 {
+            text-align: center;
+        }
         </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
@@ -34,10 +43,10 @@
             <table class="auto-style9">
                 <tr>
                     <td class="auto-style15"><strong>
-                        <asp:Button ID="Button3" runat="server" Height="30px"  Text="+" Width="30px" />
+                        <asp:Button ID="Button3" runat="server" Height="30px"  Text="+" Width="30px" OnClick="Button3_Click" />
                         </strong></td>
                     <td class="auto-style16"><strong>
-                        <asp:Button ID="Button4" runat="server" CssClass="auto-style14" Height="30px"  Text="-" Width="30px" />
+                        <asp:Button ID="Button4" runat="server" CssClass="auto-style14" Height="30px"  Text="-" Width="30px" OnClick="Button4_Click" />
                         </strong></td>
                     <td><strong>YEMEK LİSTESİ</strong></td>
                 </tr>
@@ -45,7 +54,7 @@
         </asp:Panel>
         </asp:Panel>
     <asp:Panel ID="Panel2" runat="server">
-        <asp:DataList ID="DataList1" runat="server" OnSelectedIndexChanged="DataList1_SelectedIndexChanged" Width="360px">
+        <asp:DataList ID="DataList1" runat="server"  Width="360px">
             <ItemTemplate>
                 <table class="auto-style9">
                     <tr>
@@ -69,10 +78,10 @@
             <table class="auto-style9">
                 <tr>
                     <td class="auto-style15"><strong>
-                        <asp:Button ID="Button5" runat="server" Height="30px"  Text="+" Width="30px"  />
+                        <asp:Button ID="Button5" runat="server" Height="30px"  Text="+" Width="30px" OnClick="Button5_Click"  />
                         </strong></td>
                     <td class="auto-style16"><strong>
-                        <asp:Button ID="Button6" runat="server" CssClass="auto-style14" Height="30px"  Text="-" Width="30px"  />
+                        <asp:Button ID="Button6" runat="server" CssClass="auto-style14" Height="30px"  Text="-" Width="30px" OnClick="Button6_Click"  />
                         </strong></td>
                     <td><strong>YEMEK EKLEME</strong></td>
                 </tr>
@@ -85,22 +94,45 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td>KATEGORİ AD:</td>
-                <td>
-                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                <td>YEMEK AD:</td>
+                <td class="auto-style18">
+                    <asp:TextBox ID="TextBox1" runat="server" Width="220px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td>KATEGORİ İKON:</td>
+                <td>MALZEMELER:</td>
+                <td class="auto-style19">
+                    <asp:TextBox ID="TextBox2" runat="server" Height="100px" TextMode="MultiLine" Width="220px">
+
+
+
+
+
+</asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>YEMEK TARİFİ:</td>
                 <td>
-                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBox3" runat="server" Height="200px" TextMode="MultiLine" Width="220px"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>KATEGORİ:</td>
+                <td>
+                    <asp:DropDownList ID="DropDownList1" runat="server" Width="220px">
+                    </asp:DropDownList>
                 </td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td>
-                    <asp:Button ID="btnekle" runat="server" Text="Ekle" />
+                <td class="auto-style20">
+                    <asp:Button ID="btnekle" runat="server" Text="Ekle" Width="125px" />
                 </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
             </tr>
         </table>
     </asp:Panel>
