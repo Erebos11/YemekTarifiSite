@@ -66,7 +66,7 @@
                         </td>
                         <td class="auto-style11">
 
-                           <a href="KategoriDuzenle.aspx?Kategoriid=<%#Eval("Kategoriid")%>" > <asp:Image ID="Image3" runat="server" Height="30px" ImageUrl="~/ikonlar/update.jpg" Width="31px" /></a>
+                           <a href="YemekDuzenle.aspx?Yemekid=<%#Eval("Yemekid")%>" > <asp:Image ID="Image3" runat="server" Height="30px" ImageUrl="~/ikonlar/update.jpg" Width="31px" /></a>
                         </td>
                     </tr>
                 </table>
