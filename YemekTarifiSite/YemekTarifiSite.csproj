@@ -100,6 +100,7 @@
     <Content Include="kategoriDetay.aspx" />
     <Content Include="kategoriler.aspx" />
     <Content Include="Kullanici.css" />
+    <Content Include="MesajDetay.aspx" />
     <Content Include="Mesajlar.aspx" />
     <Content Include="resimler\1.jpg" />
     <Content Include="resimler\2.jpg" />
@@ -185,6 +186,13 @@
     </Compile>
     <Compile Include="kategoriler.aspx.designer.cs">
       <DependentUpon>kategoriler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MesajDetay.aspx.cs">
+      <DependentUpon>MesajDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MesajDetay.aspx.designer.cs">
+      <DependentUpon>MesajDetay.aspx</DependentUpon>
     </Compile>
     <Compile Include="Mesajlar.aspx.cs">
       <DependentUpon>Mesajlar.aspx</DependentUpon>
