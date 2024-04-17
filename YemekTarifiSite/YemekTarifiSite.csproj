@@ -93,12 +93,14 @@
     <Content Include="GununYemegi.aspx" />
     <Content Include="hakkımızda.aspx" />
     <Content Include="ikonlar\DELETE.png" />
+    <Content Include="ikonlar\file_2822676.png" />
     <Content Include="ikonlar\update.jpg" />
     <Content Include="iletisim.aspx" />
     <Content Include="KategoriDuzenle.aspx" />
     <Content Include="kategoriDetay.aspx" />
     <Content Include="kategoriler.aspx" />
     <Content Include="Kullanici.css" />
+    <Content Include="Mesajlar.aspx" />
     <Content Include="resimler\1.jpg" />
     <Content Include="resimler\2.jpg" />
     <Content Include="resimler\images.jpg" />
@@ -183,6 +185,13 @@
     </Compile>
     <Compile Include="kategoriler.aspx.designer.cs">
       <DependentUpon>kategoriler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mesajlar.aspx.cs">
+      <DependentUpon>Mesajlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mesajlar.aspx.designer.cs">
+      <DependentUpon>Mesajlar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.Master.cs">

@@ -25,8 +25,8 @@ namespace YemekTarifiSite
             //onaysız yorumlar
             SqlCommand komut2 = new SqlCommand("select * from Tbl_Yorumlar where YorumOnay=0", bgl.baglanti());
             SqlDataReader dr2 = komut2.ExecuteReader();
-            DataList1.DataSource = dr2;
-            DataList1.DataBind();
+            DataList2.DataSource = dr2;
+            DataList2.DataBind();
         }
 
         protected void Button3_Click(object sender, EventArgs e)
