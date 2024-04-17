@@ -55,7 +55,9 @@
         </tr>
         <tr>
             <td class="auto-style12">&nbsp;</td>
-            <td class="auto-style13">&nbsp;</td>
+            <td class="auto-style13">
+                <asp:Button ID="Button2" runat="server" Text="Günün Yemeği Yap" Width="150px" OnClick="Button2_Click" />
+            </td>
         </tr>
     </table>
 </asp:Content>
