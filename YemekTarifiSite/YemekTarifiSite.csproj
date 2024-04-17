@@ -92,6 +92,7 @@
     <Content Include="Global.asax" />
     <Content Include="GununYemegi.aspx" />
     <Content Include="hakkımızda.aspx" />
+    <Content Include="HakkımızdaAdmin.aspx" />
     <Content Include="ikonlar\DELETE.png" />
     <Content Include="ikonlar\file_2822676.png" />
     <Content Include="ikonlar\update.jpg" />
@@ -123,6 +124,7 @@
     <Content Include="Yemekler.aspx" />
     <Content Include="YorumDetay.aspx" />
     <Content Include="Yorumlar.aspx" />
+    <Content Include="Öneriler.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Admin.aspx.cs">
@@ -158,6 +160,13 @@
     </Compile>
     <Compile Include="hakkımızda.aspx.designer.cs">
       <DependentUpon>hakkımızda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HakkımızdaAdmin.aspx.cs">
+      <DependentUpon>HakkımızdaAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HakkımızdaAdmin.aspx.designer.cs">
+      <DependentUpon>HakkımızdaAdmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="iletisim.aspx.cs">
       <DependentUpon>iletisim.aspx</DependentUpon>
@@ -314,6 +323,13 @@
     </Compile>
     <Compile Include="Yorumlar.aspx.designer.cs">
       <DependentUpon>Yorumlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Öneriler.aspx.cs">
+      <DependentUpon>Öneriler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Öneriler.aspx.designer.cs">
+      <DependentUpon>Öneriler.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
